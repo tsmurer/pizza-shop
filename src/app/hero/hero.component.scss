@@ -1,0 +1,55 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.3)), url(../../assets/photo-1513104890138-7c749659a591.avif);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    &__infobox {
+        color:#f7f7f7;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        padding: 2rem;
+
+        &__title {
+            user-select: none;
+            font-size: 4.5rem;
+            text-align: center;
+        }
+        &__paragraph {
+            font-size: 1.5rem;
+        }
+
+        &__btn {
+            background-color: #a70000;
+            padding: 1rem 2rem;
+            display: block;
+            width: max-content;
+            font-size: 1.5rem;
+            font-family: Quicksand;
+            border-radius: 10px;
+            
+            &:hover {
+                background-color: #c70000;
+                transition: all 0.3s;
+                
+            }
+
+            &:active {
+                transform: translateY(.1rem);
+                transition: all 0.05s;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        background-position-x: -18rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.45)), url(../../assets/photo-1513104890138-7c749659a591.avif);
+    }
+  }
